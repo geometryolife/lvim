@@ -28,5 +28,9 @@ lvim.keys.visual_mode['H'] = "0"
 lvim.keys.visual_mode['L'] = "$"
 lvim.keys.normal_mode['<Leader><Leader>'] = '<Esc>/<++><CR><Cmd>nohlsearch<CR>"_c4l'
 
+lvim.builtin.which_key.mappings[";"] = { "<Plug>(comment_toggle_linewise_current)", "Comment toggle current line" }
+lvim.builtin.which_key.vmappings[";"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment toggle linewise (visual)" }
+lvim.builtin.which_key.mappings["/"] = { "<cmd>Alpha<CR>", "Dashboard" }
+
 -- LSP
 lvim.lsp.buffer_mappings.normal_mode['<Leader>k'] = { vim.lsp.buf.hover, "Show hover" }
