@@ -3,6 +3,10 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
+-- Remove some keybindings
+lvim.keys.normal_mode['s'] = nil
+lvim.lsp.buffer_mappings.normal_mode['K'] = nil
+
 -- Normal and Visual mode mapping M-x as :
 lvim.keys.normal_mode["<M-x>"] = ":<C-u>call feedkeys(':')<CR>"
 lvim.keys.visual_mode["<M-x>"] = ":<C-u>call feedkeys(':')<CR>gv"
