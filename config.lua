@@ -7,6 +7,16 @@
 lvim.keys.normal_mode['s'] = nil
 lvim.lsp.buffer_mappings.normal_mode['K'] = nil
 
+-- Use kj to exit Insert mode
+lvim.keys.insert_mode['kj'] = '<Esc>'
+
 -- Normal and Visual mode mapping M-x as :
 lvim.keys.normal_mode["<M-x>"] = ":<C-u>call feedkeys(':')<CR>"
 lvim.keys.visual_mode["<M-x>"] = ":<C-u>call feedkeys(':')<CR>gv"
+
+-- Mapping SPC-k as K
+lvim.keys.normal_mode['<Leader>k'] = 'K'
+
+
+-- LSP
+lvim.lsp.buffer_mappings.normal_mode['<Leader>k'] = { vim.lsp.buf.hover, "Show hover" }
