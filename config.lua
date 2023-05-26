@@ -4,7 +4,7 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 -- Remove some keybindings
-lvim.keys.normal_mode['s'] = nil
+vim.api.nvim_set_keymap('n', 's', '<Nop>', { silent = true })
 lvim.lsp.buffer_mappings.normal_mode['K'] = nil
 
 -- Use kj to exit Insert mode
