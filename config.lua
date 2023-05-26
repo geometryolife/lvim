@@ -7,6 +7,13 @@
 vim.api.nvim_set_keymap('n', 's', '<Nop>', { silent = true })
 lvim.lsp.buffer_mappings.normal_mode['K'] = nil
 
+-- Toggle wrap
+lvim.keys.normal_mode['sw'] = '<Cmd>set wrap!<CR>'
+
+-- Split window
+lvim.keys.normal_mode['sv'] = '<Cmd>vsp<CR>'
+lvim.keys.normal_mode['sh'] = '<Cmd>sp<CR>'
+
 -- Use kj to exit Insert mode
 lvim.keys.insert_mode['kj'] = '<Esc>'
 
