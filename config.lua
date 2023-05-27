@@ -14,6 +14,10 @@ lvim.keys.normal_mode['sw'] = '<Cmd>set wrap!<CR>'
 lvim.keys.normal_mode['sv'] = '<Cmd>vsp<CR>'
 lvim.keys.normal_mode['sh'] = '<Cmd>sp<CR>'
 
+-- Switch to previous/next buffer
+lvim.keys.normal_mode['sp'] = '<Cmd>bprevious<CR>'
+lvim.keys.normal_mode['sn'] = '<Cmd>bnext<CR>'
+
 -- Use kj to exit Insert mode
 lvim.keys.insert_mode['kj'] = '<Esc>'
 
