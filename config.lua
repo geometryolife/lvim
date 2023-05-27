@@ -35,7 +35,8 @@ lvim.keys.visual_mode['H'] = "0"
 lvim.keys.visual_mode['L'] = "$"
 lvim.keys.normal_mode['<Leader><Leader>'] = '<Esc>/<++><CR><Cmd>nohlsearch<CR>"_c4l'
 
-lvim.builtin.which_key.mappings["/"] = {} -- remove
+-- Leader mappings
+lvim.builtin.which_key.mappings["/"] = { "<Cmd>Telescope live_grep<CR>", "Find Text" }
 lvim.builtin.which_key.mappings[";"] = { "<Plug>(comment_toggle_linewise_current)", "Comment toggle current line" }
 lvim.builtin.which_key.vmappings[";"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment toggle linewise (visual)" }
 lvim.builtin.which_key.mappings["h"] = { "<cmd>Alpha<CR>", "Dashboard" }
