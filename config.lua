@@ -39,6 +39,14 @@ lvim.keys.visual_mode['H'] = "0"
 lvim.keys.visual_mode['L'] = "$"
 lvim.keys.normal_mode['<Leader><Leader>'] = '<Esc>/<++><CR><Cmd>nohlsearch<CR>"_c4l'
 
+-- Emacs moving style
+lvim.keys.insert_mode["<C-p>"] = "<Up>"
+lvim.keys.insert_mode["<C-n>"] = "<Down>"
+lvim.keys.insert_mode["<C-b>"] = "<Left>"
+lvim.keys.insert_mode["<C-f>"] = "<Right>"
+lvim.keys.insert_mode["<C-a>"] = "<Home>"
+lvim.keys.insert_mode["<C-e>"] = "<End>"
+
 -- Leader mappings
 lvim.builtin.which_key.mappings["/"] = { "<Cmd>Telescope live_grep<CR>", "Find Text" }
 lvim.builtin.which_key.mappings[";"] = { "<Plug>(comment_toggle_linewise_current)", "Comment toggle current line" }
