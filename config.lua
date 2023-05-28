@@ -60,3 +60,6 @@ lvim.builtin.which_key.mappings["<CR>"] = { "<Cmd>nohlsearch<CR>", "No Highlight
 
 -- LSP
 lvim.lsp.buffer_mappings.normal_mode['<Leader>k'] = { vim.lsp.buf.hover, "Show hover" }
+
+require('mdsnippet')
+-- reload "mdsnippet"
