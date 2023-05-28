@@ -19,8 +19,8 @@ lvim.keys.normal_mode['sp'] = '<Cmd>bprevious<CR>'
 lvim.keys.normal_mode['sn'] = '<Cmd>bnext<CR>'
 
 -- Add newline above/below
-lvim.keys.normal_mode['[<Leader>'] = "O<Esc>"
-lvim.keys.normal_mode[']<Leader>'] = "o<Esc>"
+lvim.keys.normal_mode['[<Leader>'] = "O<Esc>j"
+lvim.keys.normal_mode[']<Leader>'] = "o<Esc>k"
 
 -- Use kj to exit Insert mode
 lvim.keys.insert_mode['kj'] = '<Esc>'
