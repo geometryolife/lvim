@@ -18,6 +18,9 @@ lvim.keys.normal_mode['sh'] = '<Cmd>sp<CR>'
 lvim.keys.normal_mode['sp'] = '<Cmd>bprevious<CR>'
 lvim.keys.normal_mode['sn'] = '<Cmd>bnext<CR>'
 
+-- Save and Quit
+lvim.keys.normal_mode["si"] = "<Cmd>wq<CR>"
+
 -- Add newline above/below
 lvim.keys.normal_mode['[<Leader>'] = "O<Esc>j"
 lvim.keys.normal_mode[']<Leader>'] = "o<Esc>k"
@@ -57,6 +60,7 @@ lvim.builtin.which_key.mappings[";"] = { "<Plug>(comment_toggle_linewise_current
 lvim.builtin.which_key.vmappings[";"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment toggle linewise (visual)" }
 lvim.builtin.which_key.mappings["h"] = { "<cmd>Alpha<CR>", "Dashboard" }
 lvim.builtin.which_key.mappings["<CR>"] = { "<Cmd>nohlsearch<CR>", "No Highlight" }
+lvim.builtin.which_key.mappings["Q"] = { "<Cmd>confirm qa<CR>", "Quit All" }
 
 -- LSP
 lvim.lsp.buffer_mappings.normal_mode['<Leader>k'] = { vim.lsp.buf.hover, "Show hover" }
