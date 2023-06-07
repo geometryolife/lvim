@@ -7,6 +7,9 @@
 vim.api.nvim_set_keymap('n', 's', '<Nop>', { silent = true })
 lvim.lsp.buffer_mappings.normal_mode['K'] = nil
 
+-- Repeat the last macro
+lvim.keys.normal_mode[","] = "@@"
+
 -- Toggle wrap
 lvim.keys.normal_mode['sw'] = '<Cmd>set wrap!<CR>'
 
