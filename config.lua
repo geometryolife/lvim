@@ -18,8 +18,8 @@ lvim.keys.normal_mode['sv'] = '<Cmd>vsp<CR>'
 lvim.keys.normal_mode['sh'] = '<Cmd>sp<CR>'
 
 -- Switch to previous/next buffer
-lvim.keys.normal_mode['sp'] = '<Cmd>bprevious<CR>'
-lvim.keys.normal_mode['sn'] = '<Cmd>bnext<CR>'
+lvim.keys.normal_mode['sk'] = '<Cmd>bprevious<CR>'
+lvim.keys.normal_mode['sj'] = '<Cmd>bnext<CR>'
 
 -- Save and Quit
 lvim.keys.normal_mode["si"] = "<Cmd>wq<CR>"
@@ -70,3 +70,8 @@ lvim.lsp.buffer_mappings.normal_mode['<Leader>k'] = { vim.lsp.buf.hover, "Show h
 
 require('mdsnippet')
 -- reload "mdsnippet"
+
+lvim.plugins = {
+  { "dhruvasagar/vim-table-mode" },
+  { "rvmelkonian/move.vim" },
+}
