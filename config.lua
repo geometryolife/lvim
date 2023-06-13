@@ -74,4 +74,5 @@ require('mdsnippet')
 lvim.plugins = {
   { "dhruvasagar/vim-table-mode" },
   { "rvmelkonian/move.vim" },
+  { "rafcamlet/nvim-luapad" },
 }
