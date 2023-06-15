@@ -22,6 +22,15 @@ lvim.keys.normal_mode['sh'] = '<Cmd>sp<CR>'
 lvim.keys.normal_mode['sk'] = '<Cmd>bprevious<CR>'
 lvim.keys.normal_mode['sj'] = '<Cmd>bnext<CR>'
 
+-- Tab management
+lvim.keys.normal_mode["sT"] = "<Cmd>tabnew<CR>"
+lvim.keys.normal_mode["stk"] = "<Cmd>-tabnext<CR>"
+lvim.keys.normal_mode["stj"] = "<Cmd>+tabnext<CR>"
+lvim.keys.normal_mode["sth"] = "<Cmd>-tabmove<CR>"
+lvim.keys.normal_mode["stl"] = "<Cmd>+tabmove<CR>"
+lvim.keys.normal_mode["stc"] = "<Cmd>tabclose<CR>"
+lvim.keys.normal_mode["sto"] = "<Cmd>tabonly<CR>"
+
 -- Save and Quit
 lvim.keys.normal_mode["si"] = "<Cmd>wq<CR>"
 
