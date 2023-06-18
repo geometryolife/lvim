@@ -71,6 +71,8 @@ lvim.keys.insert_mode["<C-b>"] = "<Left>"
 lvim.keys.insert_mode["<C-f>"] = "<Right>"
 lvim.keys.insert_mode["<C-a>"] = "<Home>"
 lvim.keys.insert_mode["<C-e>"] = "<End>"
+lvim.keys.insert_mode["<A-b>"] = "<S-Left>"
+lvim.keys.insert_mode["<A-f>"] = "<S-Right>"
 
 -- Leader mappings
 lvim.builtin.which_key.mappings["/"] = { "<Cmd>Telescope live_grep<CR>", "Find Text" }
