@@ -24,6 +24,8 @@ lvim.keys.normal_mode['sj'] = '<Cmd>bnext<CR>'
 
 -- Tab management
 lvim.keys.normal_mode["sT"] = "<Cmd>tabnew<CR>"
+lvim.keys.normal_mode["sp"] = "<Cmd>-tabnext<CR>"
+lvim.keys.normal_mode["sn"] = "<Cmd>+tabnext<CR>"
 lvim.keys.normal_mode["stk"] = "<Cmd>-tabnext<CR>"
 lvim.keys.normal_mode["stj"] = "<Cmd>+tabnext<CR>"
 lvim.keys.normal_mode["sth"] = "<Cmd>-tabmove<CR>"
@@ -35,7 +37,7 @@ lvim.keys.normal_mode["sto"] = "<Cmd>tabonly<CR>"
 lvim.keys.normal_mode["si"] = "<Cmd>wq<CR>"
 
 -- Print the current directory name
-lvim.keys.normal_mode["sp"] = "<Cmd>pwd<CR>"
+lvim.keys.normal_mode["sd"] = "<Cmd>pwd<CR>"
 
 -- Add newline above/below
 lvim.keys.normal_mode['[<Leader>'] = "O<Esc>j"
