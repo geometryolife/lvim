@@ -34,6 +34,9 @@ lvim.keys.normal_mode["sto"] = "<Cmd>tabonly<CR>"
 -- Save and Quit
 lvim.keys.normal_mode["si"] = "<Cmd>wq<CR>"
 
+-- Print the current directory name
+lvim.keys.normal_mode["sp"] = "<Cmd>pwd<CR>"
+
 -- Add newline above/below
 lvim.keys.normal_mode['[<Leader>'] = "O<Esc>j"
 lvim.keys.normal_mode[']<Leader>'] = "o<Esc>k"
