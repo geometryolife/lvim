@@ -73,6 +73,11 @@ lvim.keys.insert_mode["<C-a>"] = "<Home>"
 lvim.keys.insert_mode["<C-e>"] = "<End>"
 lvim.keys.insert_mode["<A-b>"] = "<S-Left>"
 lvim.keys.insert_mode["<A-f>"] = "<S-Right>"
+vim.api.nvim_set_keymap("c", "<C-a>", "<Home>", { noremap = true })
+vim.api.nvim_set_keymap("c", "<C-b>", "<Left>", { noremap = true })
+vim.api.nvim_set_keymap("c", "<C-f>", "<Right>", { noremap = true })
+vim.api.nvim_set_keymap("c", "<A-b>", "<S-Left>", { noremap = true })
+vim.api.nvim_set_keymap("c", "<A-f>", "<S-Right>", { noremap = true })
 
 -- Leader mappings
 lvim.builtin.which_key.mappings["/"] = { "<Cmd>Telescope live_grep<CR>", "Find Text" }
