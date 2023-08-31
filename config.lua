@@ -64,6 +64,12 @@ lvim.keys.visual_mode['H'] = "0"
 lvim.keys.visual_mode['L'] = "$"
 lvim.keys.normal_mode['<Leader><Leader>'] = '<Esc>/<++><CR><Cmd>nohlsearch<CR>"_c4l'
 
+-- View fast
+lvim.keys.normal_mode["<C-p>"] = "<C-y>"
+lvim.keys.normal_mode["<C-n>"] = "<C-e>"
+lvim.keys.normal_mode["<C-M-p>"] = "5<C-y>"
+lvim.keys.normal_mode["<C-M-n>"] = "5<C-e>"
+
 -- Emacs moving style
 lvim.keys.insert_mode["<C-p>"] = "<Up>"
 lvim.keys.insert_mode["<C-n>"] = "<Down>"
@@ -98,4 +104,7 @@ lvim.plugins = {
   { "rvmelkonian/move.vim" },
   { "rafcamlet/nvim-luapad" },
   { "sindrets/diffview.nvim" },
+  { "ggandor/leap.nvim" },
 }
+
+-- require('leap').add_default_mappings()
