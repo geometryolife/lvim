@@ -14,6 +14,9 @@ lvim.keys.normal_mode["."] = "@"
 -- Toggle wrap
 lvim.keys.normal_mode['sw'] = '<Cmd>set wrap!<CR>'
 
+-- Toggle paste mode
+lvim.keys.normal_mode["sr"] = "<Cmd>set paste!<CR>"
+
 -- Split window
 lvim.keys.normal_mode['sv'] = '<Cmd>vsp<CR>'
 lvim.keys.normal_mode['sh'] = '<Cmd>sp<CR>'
